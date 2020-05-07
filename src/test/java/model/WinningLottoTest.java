@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.TreeMap;
+import java.util.Map;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.entry;
@@ -51,7 +51,7 @@ public class WinningLottoTest {
         numbers3.add("8");
         lottoTickets.add(new Lotto(numbers3));
 
-        TreeMap<Rank, Integer> rankCount = winningLotto.getRankCount(lottoTickets);
+        Map<Rank, Integer> rankCount = winningLotto.getRankCount(lottoTickets);
         assertThat(rankCount).hasSize(6)
                 .contains(entry(Rank.FIRST, 1), entry(Rank.SECOND, 1), entry(Rank.THIRD, 1))
                 .doesNotContain(entry(Rank.FOURTH, 1), entry(Rank.FIFTH, 1));

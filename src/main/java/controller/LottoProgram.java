@@ -20,7 +20,7 @@ public class LottoProgram {
         List<Lotto> lottoTickets = setupLottoTickets(purchaseCount, manualCount);
 
         WinningLotto winningLotto = new WinningLotto(new Lotto(Input.inputLastWeekNumbers()), Input.inputBonusBall());
-        TreeMap<Rank, Integer> rankCount = winningLotto.getRankCount(lottoTickets);
+        Map<Rank, Integer> rankCount = winningLotto.getRankCount(lottoTickets);
         printResult(rankCount, purchaseCount);
     }
 
@@ -64,7 +64,7 @@ public class LottoProgram {
         return lottoTickets;
     }
 
-    private void printResult(TreeMap<Rank, Integer> rankCount, int purchaseCount) {
+    private void printResult(Map<Rank, Integer> rankCount, int purchaseCount) {
         Output.printRank(rankCount);
         Output.printRate(rankCount, purchaseCount);
     }

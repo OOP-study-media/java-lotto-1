@@ -6,7 +6,6 @@ import res.Resource;
 
 import java.util.List;
 import java.util.Map;
-import java.util.TreeMap;
 
 public class Output {
     public static void printMessage(String message) {
@@ -25,7 +24,7 @@ public class Output {
         }
     }
 
-    public static void printRank(TreeMap<Rank, Integer> rankCount) {
+    public static void printRank(Map<Rank, Integer> rankCount) {
         printMessage(Resource.WINNING_STATISTICS);
         for (Map.Entry<Rank, Integer> rankEntry : rankCount.entrySet()) {
             Rank rank = rankEntry.getKey();
@@ -47,7 +46,7 @@ public class Output {
         return rankString + Resource.OPEN_PARENTHESIS + rank.getWinningMoney() + Resource.WON + Resource.CLOSE_PARENTHESIS + Resource.HYPHEN + count + Resource.COUNT;
     }
 
-    public static void printRate(TreeMap<Rank, Integer> rankCount, int purchaseCount) {
+    public static void printRate(Map<Rank, Integer> rankCount, int purchaseCount) {
         float sum = 0;
 
         for (Map.Entry<Rank, Integer> rankEntry : rankCount.entrySet()) {

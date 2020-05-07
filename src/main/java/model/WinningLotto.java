@@ -1,8 +1,6 @@
 package model;
 
-import java.util.Comparator;
-import java.util.List;
-import java.util.TreeMap;
+import java.util.*;
 
 public class WinningLotto {
     private final Lotto lotto;
@@ -13,13 +11,13 @@ public class WinningLotto {
         this.bonusNo = bonusNo;
     }
 
-    public TreeMap<Rank, Integer> getRankCount(List<Lotto> lottoTickets) {
+    public Map<Rank, Integer> getRankCount(List<Lotto> lottoTickets) {
         TreeMap<Rank, Integer> rankCount = initRankCount();
         for (Lotto userLotto : lottoTickets) {
             Rank rank = match(userLotto);
             rankCount.put(rank, rankCount.get(rank) + 1);
         }
-        return rankCount;
+        return Collections.unmodifiableMap(rankCount);
     }
 
     private TreeMap<Rank, Integer> initRankCount() {
