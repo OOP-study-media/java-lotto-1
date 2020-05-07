@@ -8,8 +8,5 @@ Validator
  - checkNumber
  - checkDuplicate
 
-Lotto
- - containsNumber
-
 WinningLotto
  - getRankCount
