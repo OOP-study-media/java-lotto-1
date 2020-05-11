@@ -12,7 +12,7 @@ public class WinningLotto {
     }
 
     public Map<Rank, Integer> getRankCount(List<Lotto> lottoTickets) {
-        TreeMap<Rank, Integer> rankCount = initRankCount();
+        Map<Rank, Integer> rankCount = initRankCount();
         for (Lotto userLotto : lottoTickets) {
             Rank rank = match(userLotto);
             rankCount.put(rank, rankCount.get(rank) + 1);
@@ -20,8 +20,8 @@ public class WinningLotto {
         return Collections.unmodifiableMap(rankCount);
     }
 
-    private TreeMap<Rank, Integer> initRankCount() {
-        TreeMap<Rank, Integer> rankCount = new TreeMap<>(new rankComparator());
+    private Map<Rank, Integer> initRankCount() {
+        Map<Rank, Integer> rankCount = new TreeMap<>(new rankComparator());
         for (Rank rank : Rank.values()) {
             rankCount.put(rank, 0);
         }

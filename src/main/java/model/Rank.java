@@ -1,7 +1,5 @@
 package model;
 
-import res.Resource;
-
 public enum Rank {
 
     FIRST(6, 2_000_000_000), // 1등
@@ -12,6 +10,7 @@ public enum Rank {
     MISS(0, 0);
 
     private static final int WINNING_MIN_COUNT = 3;
+    private static final String INVALID_VALUE_MESSAGE = "는 유효하지 않은 값입니다.";
 
     private int countOfMatch;
     private int winningMoney;
@@ -44,7 +43,7 @@ public enum Rank {
             }
         }
 
-        throw new IllegalArgumentException(countOfMatch + Resource.INVALID_VALUE_MESSAGE);
+        throw new IllegalArgumentException(countOfMatch + INVALID_VALUE_MESSAGE);
     }
 
     private boolean matchCount(int countOfMatch) {

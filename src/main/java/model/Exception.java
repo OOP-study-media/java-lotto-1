@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class Validator {
+public class Exception {
     public static void checkLottoNumbersCount(List<Integer> numbers) {
         if (numbers.size() != Resource.SELECT_NUMBER_LENGTH) {
             throw new InvalidParameterException(Resource.INVALID_NUMBERS_COUNT_MESSAGE);

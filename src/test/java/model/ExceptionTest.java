@@ -11,7 +11,7 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThatCode;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
-public class ValidatorTest {
+public class ExceptionTest {
     private List<Integer> numbers;
 
     @BeforeEach
@@ -26,7 +26,7 @@ public class ValidatorTest {
 
     @Test
     void 로또_번호_6개_아닐_때_테스트() {
-        assertThatThrownBy(() -> { Validator.checkLottoNumbersCount(numbers); })
+        assertThatThrownBy(() -> { Exception.checkLottoNumbersCount(numbers); })
                 .isInstanceOf(InvalidParameterException.class)
                 .hasMessageContaining(Resource.INVALID_NUMBERS_COUNT_MESSAGE);
     }
@@ -36,7 +36,7 @@ public class ValidatorTest {
         numbers.add(6);
 
         assertThatCode(() -> {
-            Validator.checkLottoNumbersCount(numbers);
+            Exception.checkLottoNumbersCount(numbers);
         }).doesNotThrowAnyException();
     }
 
@@ -45,7 +45,7 @@ public class ValidatorTest {
         int total = 3;
         int manualCount = 4;
 
-        assertThatThrownBy(() -> { Validator.checkManualLottoCount(total, manualCount); })
+        assertThatThrownBy(() -> { Exception.checkManualLottoCount(total, manualCount); })
                 .isInstanceOf(InvalidParameterException.class)
                 .hasMessageContaining(Resource.INVALID_MANUAL_COUNT_MESSAGE);
     }
@@ -56,7 +56,7 @@ public class ValidatorTest {
         int manualCount = 3;
 
         assertThatCode(() -> {
-            Validator.checkManualLottoCount(total, manualCount);
+            Exception.checkManualLottoCount(total, manualCount);
         }).doesNotThrowAnyException();
     }
 
@@ -64,7 +64,7 @@ public class ValidatorTest {
     void 문자_입력했을때_테스트() {
         String input = "문자";
 
-        assertThatThrownBy(() -> { Validator.checkNumber(input); })
+        assertThatThrownBy(() -> { Exception.checkNumber(input); })
                 .isInstanceOf(NumberFormatException.class)
                 .hasMessageContaining(Resource.INVALID_NUMBER_MESSAGE);
     }
@@ -74,7 +74,7 @@ public class ValidatorTest {
         String input = "1";
 
         assertThatCode(() -> {
-            Validator.checkNumber(input);
+            Exception.checkNumber(input);
         }).doesNotThrowAnyException();
     }
 
@@ -82,7 +82,7 @@ public class ValidatorTest {
     void 숫자_중복있을_때_테스트() {
         numbers.add(1);
 
-        assertThatThrownBy(() -> { Validator.checkDuplicate(numbers); })
+        assertThatThrownBy(() -> { Exception.checkDuplicate(numbers); })
                 .isInstanceOf(InvalidParameterException.class)
                 .hasMessageContaining(Resource.DUPLICATE_MESSAGE);
     }
@@ -92,7 +92,7 @@ public class ValidatorTest {
         numbers.add(6);
 
         assertThatCode(() -> {
-            Validator.checkDuplicate(numbers);
+            Exception.checkDuplicate(numbers);
         }).doesNotThrowAnyException();
     }
 
