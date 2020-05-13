@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'me.dowon'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile('org.junit.jupiter:junit-jupiter:5.4.2')
+    testCompile('org.assertj:assertj-core:3.11.1')
+    implementation 'junit:junit:4.12'
+}
+
+test {
+    useJUnitPlatform()
+}
