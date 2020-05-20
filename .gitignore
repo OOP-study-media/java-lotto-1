@@ -1,13 +1,5 @@
+# Ignore Gradle project-specific cache directory
 .gradle
-.idea
-/gradle
-gradlew
-gradlew.bat
-.gradle
-*.iws
-*.iml
-*.ipr
-.DS_Store
-/build
-/out
-/target
+
+# Ignore Gradle build output directory
+build
