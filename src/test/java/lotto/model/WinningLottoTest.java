@@ -6,7 +6,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class WinningLottoTest {
     @Test
-    void 정답비교_후_반환되는_Rank_값_확인() {
+    void 정답비교_후_반환되는_Rank_값_확인() throws Exception {
         // given
         Lotto myLotto = new Lotto(Arrays.asList(1,2,3,4,5,6));
         Lotto lastWeekAnswer = new Lotto(Arrays.asList(1,2,3,4,5,45));

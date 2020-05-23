@@ -1,9 +1,9 @@
 package lotto.exceptions;
 
-public class IncorrectInputTypeException extends Exception {
+public class IsNotNumericException extends Exception {
     private static final String MESSAGE = "숫자만 입력 가능합니다.";
 
-    public IncorrectInputTypeException() {
+    public IsNotNumericException() {
         super(MESSAGE);
     }
 }

@@ -8,7 +8,7 @@ import java.util.List;
 import static lotto.model.Lotto.*;
 
 public class LottoNumberValidator {
-    public static void test(List<Integer> lottoNum) throws Exception {
+    public static void validate(List<Integer> lottoNum) throws Exception {
         if (lottoNum.size() != LOTTO_LENGTH) {
             throw new IncorrectLottoLengthException();
         }

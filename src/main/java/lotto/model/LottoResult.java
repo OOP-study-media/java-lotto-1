@@ -4,7 +4,7 @@ import java.util.List;
 
 public class LottoResult {
     private final RankCount rankCount;
-    private int prize;
+    private final int prize;
 
     public LottoResult(List<Lotto> lottoRepository, WinningLotto winningLotto) {
         rankCount = new RankCount(lottoRepository, winningLotto);

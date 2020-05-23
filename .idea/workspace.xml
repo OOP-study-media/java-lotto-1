@@ -3,9 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="b8c8c60d-ba9e-4113-96ae-bfb74ac22ace" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lotto/exceptions/IncorrectInputTypeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/exceptions/IsNotNumericException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lotto/model/Lotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/model/Lotto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lotto/model/LottoCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/model/LottoCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lotto/controller/LottoGameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/controller/LottoGameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lotto/model/LottoResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/model/LottoResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lotto/model/RandomLottoNumCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/model/RandomLottoNumCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lotto/validators/BonusNumberValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/validators/BonusNumberValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lotto/validators/CountOfManualLottoValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/validators/CountOfManualLottoValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lotto/validators/LottoNumberValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/validators/LottoNumberValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lotto/validators/LottoPriceValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/validators/LottoPriceValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lotto/view/InputView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/view/InputView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lotto/controller/LottoGameTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lotto/model/LottoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/model/LottoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lotto/model/RandomLottoCreatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/model/RandomLottoCreatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lotto/model/WinningLottoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/model/WinningLottoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lotto/validators/BonusNumberValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/validators/BonusNumberValidatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lotto/validators/CountOfManualLottoValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/validators/CountOfManualLottoValidatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lotto/validators/LottoNumberValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/validators/LottoNumberValidatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lotto/validators/LottoPriceValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/validators/LottoPriceValidatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,21 +129,8 @@
       <recent name="lotto.validators" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in java-lotto-1.test (3)">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lotto.controller.Application" />
-      <module name="java-lotto-1.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lotto.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in java-lotto-1.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RandomLottoCreatorTest.로또_번호_랜덤_생성_확인">
+    <configuration name="All in java-lotto-1.test (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-lotto-1.test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
@@ -144,7 +146,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in java-lotto-1.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in java-lotto-1.test (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-lotto-1.test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
@@ -152,28 +154,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IsContainedInLastLottoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RandomLottoCreatorTest.로또_번호_랜덤_생성_확인" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-lotto-1.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lotto.validators.*" />
+          <option name="PATTERN" value="lotto.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lotto.validators" />
-      <option name="MAIN_CLASS_NAME" value="lotto.validators.IsContainedInLastLottoTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="lotto.model" />
+      <option name="MAIN_CLASS_NAME" value="lotto.model.RandomLottoCreatorTest" />
+      <option name="METHOD_NAME" value="로또_번호_랜덤_생성_확인" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RandomLottoCreatorTest.매번_다른_번호_생성하는_지_확인" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-lotto-1.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lotto.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lotto.model" />
+      <option name="MAIN_CLASS_NAME" value="lotto.model.RandomLottoCreatorTest" />
+      <option name="METHOD_NAME" value="매번_다른_번호_생성하는_지_확인" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RandomLottoCreatorTest.로또_번호_랜덤_생성_확인" />
+        <item itemvalue="JUnit.RandomLottoCreatorTest.매번_다른_번호_생성하는_지_확인" />
+        <item itemvalue="JUnit.All in java-lotto-1.test (4)" />
+        <item itemvalue="JUnit.All in java-lotto-1.test (2)" />
         <item itemvalue="JUnit.All in java-lotto-1.test (3)" />
-        <item itemvalue="JUnit.All in java-lotto-1.test (1)" />
-        <item itemvalue="Application.Application" />
-        <item itemvalue="JUnit.All in java-lotto-1.test" />
-        <item itemvalue="JUnit.IsContainedInLastLottoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +222,12 @@
       <workItem from="1589853426702" duration="1602000" />
       <workItem from="1589857323590" duration="2864000" />
       <workItem from="1589871036230" duration="21878000" />
-      <workItem from="1589903851091" duration="266000" />
+      <workItem from="1589903851091" duration="563000" />
+      <workItem from="1589935999127" duration="613000" />
+      <workItem from="1589937057922" duration="22000" />
+      <workItem from="1589974368464" duration="3785000" />
+      <workItem from="1590026830476" duration="2215000" />
+      <workItem from="1590041731043" duration="135000" />
     </task>
     <task id="LOCAL-00001" summary="feat : Add GenerateLottoNumStrategy">
       <created>1589612236872</created>
@@ -247,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589902583394</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="refactor : LottoNumberValidator 사용 위치 변경 (Lotto 생성자로)">
+      <created>1589904154273</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1589904154273</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,7 +292,8 @@
     <MESSAGE value="refactor : LottoRepository class 삭제" />
     <MESSAGE value="refactor : validator 구조 변경, exception 패키지 추가" />
     <MESSAGE value="test : validator 테스트코드 작성" />
-    <option name="LAST_COMMIT_MESSAGE" value="test : validator 테스트코드 작성" />
+    <MESSAGE value="refactor : LottoNumberValidator 사용 위치 변경 (Lotto 생성자로)" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor : LottoNumberValidator 사용 위치 변경 (Lotto 생성자로)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Auto_Import" timestamp="1589682681909">
@@ -304,30 +336,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="515" y="248" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1589624638801" />
-    <state x="607" y="2" key="CommitChangelistDialog2" timestamp="1589902581760">
+    <state x="607" y="2" key="CommitChangelistDialog2" timestamp="1589904152184">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="607" y="2" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589902581760" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1589872460333">
+    <state x="607" y="2" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589904152184" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1590041863976">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589872460333" />
-    <state width="1493" height="150" key="GridCell.Tab.0.bottom" timestamp="1589902660472">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1590041863976" />
+    <state width="1493" height="150" key="GridCell.Tab.0.bottom" timestamp="1590041446991">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="150" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589902660472" />
-    <state width="1493" height="150" key="GridCell.Tab.0.center" timestamp="1589902660472">
+    <state width="1493" height="150" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590041446991" />
+    <state width="1493" height="150" key="GridCell.Tab.0.center" timestamp="1590041446990">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="150" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589902660472" />
-    <state width="1493" height="150" key="GridCell.Tab.0.left" timestamp="1589902660471">
+    <state width="1493" height="150" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590041446990" />
+    <state width="1493" height="150" key="GridCell.Tab.0.left" timestamp="1590041446990">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="150" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589902660471" />
-    <state width="1493" height="150" key="GridCell.Tab.0.right" timestamp="1589902660472">
+    <state width="1493" height="150" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590041446990" />
+    <state width="1493" height="150" key="GridCell.Tab.0.right" timestamp="1590041446990">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="150" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589902660472" />
+    <state width="1493" height="150" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590041446990" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1589902660465">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -352,14 +384,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1588140137308" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1589902585131">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1589904320373">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589902585131" />
-    <state x="459" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1589808396506">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589904320373" />
+    <state x="459" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1590041857655">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="459" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1589808396506" />
+    <state x="459" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1590041857655" />
     <state x="570" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589893054681">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

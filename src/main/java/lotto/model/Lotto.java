@@ -17,23 +17,22 @@ public class Lotto {
     private final List<Integer> numbers;
 
     public Lotto(List<Integer> numbers) throws Exception {
-        LottoNumberValidator.test(numbers);
+        LottoNumberValidator.validate(numbers);
         this.numbers = numbers;
     }
 
     public int countOfMatch(Lotto lotto) {
         int countMatch = ZERO;
         for (Integer number : numbers) {
-            countMatch += checkAnotherLottoContain(lotto, number);
+            if(checkAnotherLottoContain(lotto, number)){
+                countMatch++;
+            }
         }
         return countMatch;
     }
 
-    private int checkAnotherLottoContain(Lotto lotto, int number) {
-        if (lotto.containNumber(number)) {
-            return ONE;
-        }
-        return ZERO;
+    private boolean checkAnotherLottoContain(Lotto lotto, int number) {
+        return lotto.containNumber(number);
     }
 
     public boolean containNumber(int number) {
