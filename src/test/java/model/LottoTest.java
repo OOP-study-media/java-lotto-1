@@ -31,8 +31,7 @@ public class LottoTest {
 
         // then
         assertThat(numbers).hasSize(6)
-                .contains(1, 2, 3, 4, 5, 6)
-                .doesNotContain(7);
+                .contains(1, 2, 3, 4, 5, 6);
     }
 
     @Test

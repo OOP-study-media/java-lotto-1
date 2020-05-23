@@ -1,20 +1,23 @@
 package controller;
 
-import model.Lotto;
+import model.LottoTickets;
 import org.junit.jupiter.api.Test;
-
-import java.util.List;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class LottoProviderTest {
+    private static final int COUNT = 3;
 
     @Test
     void 랜덤_로또_개수만큼_잘_만드는지_테스트() {
-        int count = 3;
+        // given
+        LottoTickets lottoTickets = new LottoTickets();
 
-        List<Lotto> lottoTickets = LottoProvider.getRandomLottoTickets(count);
+        // when
+        LottoProvider.addRandomLottoTickets(COUNT, lottoTickets);
 
-        assertThat(lottoTickets.size()).isEqualTo(count);
+        // then
+        int size = lottoTickets.getLottoTickets().size();
+        assertThat(size).isEqualTo(COUNT);
     }
 }

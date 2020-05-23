@@ -1,6 +1,7 @@
 package controller;
 
 import model.Lotto;
+import model.LottoTickets;
 import model.Rank;
 import model.WinningLotto;
 import res.Resource;
@@ -15,9 +16,7 @@ public class LottoProgram {
         int manualCount = Input.inputManualLottoCount();
         Validator.validateManualCount(purchaseCount, manualCount);
 
-        List<Lotto> lottoTickets = setupLottoTickets(
-                LottoProvider.getManualLottoTickets(manualCount), LottoProvider.getRandomLottoTickets(purchaseCount - manualCount));
-
+        List<Lotto> lottoTickets = setupLottoTickets(purchaseCount, manualCount).getLottoTickets();
         Output.printLottoTickets(lottoTickets, manualCount);
 
         WinningLotto winningLotto = new WinningLotto(new Lotto(Input.inputLastWeekNumbers()), Input.inputBonusBall());
@@ -25,10 +24,12 @@ public class LottoProgram {
         printResult(rankCount, purchaseCount);
     }
 
-    private List<Lotto> setupLottoTickets(List<Lotto> manualLottoTickets, List<Lotto> randomLottoTickets) {
-        List<Lotto> lottoTickets = new ArrayList<>();
-        lottoTickets.addAll(manualLottoTickets);
-        lottoTickets.addAll(randomLottoTickets);
+    private static LottoTickets setupLottoTickets(int purchaseCount, int manualCount) throws Exception {
+        LottoTickets lottoTickets = new LottoTickets();
+
+        LottoProvider.addManualLottoTickets(manualCount, lottoTickets);
+        LottoProvider.addRandomLottoTickets(purchaseCount - manualCount, lottoTickets);
+
         return lottoTickets;
     }
 
